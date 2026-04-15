@@ -6,11 +6,11 @@
 body{
     margin: 0%;
     padding: 0%;
-    background-image: url(https://images.unsplash.com/photo-1654935246350-82d0a6ffd3e7?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* background-image: url(https://images.unsplash.com/photo-1654935246350-82d0a6ffd3e7?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
-
+/*
 .main{
     width: 30%;
     height: 60%;
@@ -25,7 +25,8 @@ body{
     background-color: blue;
     color: turquoise;
 }
-
+    */
+/* 
 #car1{
     position: absolute;
     width: 100px;
@@ -36,8 +37,8 @@ body{
 #car2{
     position: absolute;
     top: 30%;
-    /* left: 10%; */
-    /* right: 20%; */
+    left: 10%; 
+    right: 20%; 
     width: 110px;
     height: 130px;
     background-color: aqua;
@@ -50,7 +51,7 @@ body{
 }
 
 #box{
-    /* margin: 10px; */
+    /* margin: 10px; 
     position: relative;
     width: 330px;
     height: 320px;
@@ -65,14 +66,15 @@ body{
     height: 120px;
     background-color: rgb(241, 154, 40);
 }
+*/
 
 #boxbig{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin: 10%;
-    width: 400px;
-    height: 400px;
-    background-color: rgb(37, 180, 18);
+    width: 100%;
+    height: 100%;
+    background-color: rgb(15, 16, 15);
 }
 
 #box1{
@@ -91,4 +93,30 @@ body{
     width: 100px;
     height: 100px;
     background-color: rgb(43, 125, 172);
+}
+
+#box4{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(172, 43, 170);
+}
+#box5{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(172, 43, 101);
+}
+#box6{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(49, 140, 16);
+}
+#box7{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(12, 67, 99);
+}
+#box8{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(18, 123, 86);
 }
