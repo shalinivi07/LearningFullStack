@@ -293,7 +293,7 @@ img:hover {
 .section2 h1{
     font-family: hell Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 10.5em;
-    background-image: url(../images/textImage.png);
+    background-image: url(./images/textImage.png);
     background-size: cover;
     background-clip: text;
     position: relative;
