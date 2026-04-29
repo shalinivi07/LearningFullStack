@@ -22,6 +22,10 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+.container{
+    width: 80%;
+    margin: auto;
+}
 
 .left {
     list-style: none;
@@ -88,21 +92,21 @@ body {
     padding: 75px;
 }
 
-.text h1{
-    font-size: 50px;
-    font-weight: bold;
+.text h2{
+    /* font-size: 50px;
+    font-weight: bold; */
     color: #000;
     margin: 0;
-    padding: 15px 25px;
+    padding: 15px 16px;
     line-height: 1.5;
 }
  
 
 .text p{
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 300;
     margin: 0;
-    padding: 15px 25px;
+    padding: 15px 16px;
     line-height: 1.5;
 } 
 
@@ -122,7 +126,7 @@ body {
 }
 
 .text .btn{
-    margin-left: 2%;
+    margin-left: 3%;
     padding: 8px 18px;
     border: none;
     background-color: #FF6B00;
@@ -151,7 +155,7 @@ body {
     padding: 60px;
 }
 .image2 img{
-    height: auto;
+    height: 450px;
     width: 450px;
     border-radius: 50%;
     box-shadow: 0 8px 20px rgba(0,0,1,0.3);
@@ -166,9 +170,9 @@ body {
     transform: scale(1.05);
 }
 
-.text2 h1{
-    font-size: 50px;
-    font-weight: bold;
+.text2 h2{
+    /* font-size: 35px; */
+    /* font-weight: bold; */
     color: #000;
     margin: 0;
     padding: 15px 25px;
@@ -177,7 +181,7 @@ body {
  
 
 .text2 p{
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 300;
     margin: 0;
     padding: 15px 25px;
@@ -193,7 +197,7 @@ body {
     padding: 60px;
 }
 .image3 img{
-    height: auto;
+    height: 450px;
     width: 450px;
     border-radius: 50%;
     box-shadow: 0 8px 20px rgba(0,0,1,0.3);
@@ -208,9 +212,9 @@ body {
     transform: scale(1.05);
 }
 
-.text3 h1{
-    font-size: 50px;
-    font-weight: bold;
+.text3 h2{
+    /* font-size: 50px;
+    font-weight: bold; */
     color: #000;
     margin: 0;
     padding: 15px 25px;
@@ -219,7 +223,7 @@ body {
  
 
 .text3 p{
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 300;
     margin: 0;
     padding: 15px 25px;
