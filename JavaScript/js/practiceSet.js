@@ -1,29 +1,31 @@
-let marks = {
-    shalini:89,
-    vipul:67,
-    manisha:90,
-    tanvi:78,
+// if else statements
+//rock paper seager
+
+// function rpc( player1, player2){
+//     // let player1 = prompt; // rock-1, paper-2, seager-3
+//     // let player2 = prompt; // rock-1, paper-2, seager-3
+//     if(player1==1 && player2==2) return "player2 won";
+//     if(player1==1 && player2==3) return "player1 won";
+//     if(player1==2 && player2==3) return "player2 won";
+//     if(player1==2 && player2==1) return "player1 won";
+//     if(player1==3 && player2==1) return "player2 won";
+//     if(player1==3 && player2==2) return "player1 won";
+//     if(player1 === player2) return "draw play again";
+//     return "invailed input";
+// }
+
+// function into arrow function 
+
+let multipl = ( a,b)=>{
+    return a*b;
 }
 
-// problem 1
-for (let i = 0; i < Object.keys(marks).length; i++) {
-    console.log("the marks of " +Object.keys(marks)[i] +" is "+marks[Object.keys(marks)[i]]) 
+function score(...val){
+    let total = 0;
+    score.forEach(element => {
+        total = total + element;
+    });
+    return total;
 }
 
-//problem 2
-for(let key in marks){
-    console.log("The marks of " +key +" is "+marks[key])
-}
-
-//probelm 3
-
-let cn = 67
-let i
-
-while(i != cn){
-    console.log("try again..")
-    i = prompt("enter your no:")
-    i++
-}
-
-console.log("you have entered the currec no.")
+console.log(score(15,47,65,24,35,25,85,41,74,56));
