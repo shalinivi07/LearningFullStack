@@ -181,17 +181,124 @@ if(num % 2 == 0) {
 //     }
 // });
 
-let btn = document.querySelector("#btn");
+// let btn = document.querySelector("#btn");
 
-let fileIn = document.querySelector("#inputfile");
+// let fileIn = document.querySelector("#inputfile");
 
-btn.addEventListener("click" , function(){
-    fileIn.click();
-});
+// btn.addEventListener("click" , function(){
+//     fileIn.click();
+// });
 
-fileIn.addEventListener("change", function(dats){
-    const file = dats.target.files[0];
-    if(files !== null){
-        btn.textContent = file.name;
-    }
-})
+// fileIn.addEventListener("change", function(dats){
+//     const file = dats.target.files[0];
+//     if(files !== null){
+//         btn.textContent = file.name;
+//     }
+// })
+ 
+// form here form that make card of all the given data----------->
+/*
+let main = document.querySelector(".main");
+let inputs = document.querySelectorAll("input");
+let form = document.querySelector("form");
+
+form.addEventListener("submit" , function(dats){
+    dats.preventDefault();
+
+    let card = document.createElement("div");
+    card.classList.add("card");
+
+    let profile = document.createElement("div");
+    profile.classList.add("profile");
+
+    let img = document.createElement("img");
+    img.setAttribute("src", inputs[0].value);
+
+    let h3 = document.createElement("h3");
+    h3.textContent = inputs[1].value;
+
+    let h5 = document.createElement("h5");
+    h5.textContent = inputs[2].value;
+
+    let p = document.createElement("p");
+    p.textContent = inputs[3].value;
+
+    profile.appendChild(img);
+    card.appendChild(profile);
+
+    card.appendChild(h3);
+    card.appendChild(h5);
+    card.appendChild(p);
+
+    main.appendChild(card);
+
+    inputs.forEach(function(inp){
+        if(inp.type != "submit"){
+            inp.value = "";
+        }
+    });
+
+
+}); */
+
+//MOUSE events----->
+// let main = document.querySelector("#main");
+
+// main.addEventListener("mouseover",function(){
+//     main.style.backgroundColor = "yellow";
+// });
+
+// main.addEventListener("mouseout",function(){
+//     main.style.backgroundColor = "green";
+// }); 
+
+// window.addEventListener("mousemove", function(dats){
+//     main.style.top = dats.clientY + "px";
+//     main.style.left = dats.clientX + "px";
+// })
+
+//bubbling----->
+
+// let ul = document.querySelector("ul");
+
+// ul.addEventListener("click", function(dats){
+//     dats.target.classList.toggle("lt")
+// })
+
+// captureing-->
+
+// let a = document.querySelector(".a");
+// let b = document.querySelector(".b");
+// let c = document.querySelector(".c");
+// let btn = document.querySelector("button");
+
+// btn.addEventListener("click",function(){
+//     console.log("btn clicked");
+// });
+
+// a.addEventListener("click",
+//     function(){
+//         console.log("a clicked");
+//     },true
+// );
+
+// b.addEventListener("click",function(){
+//     console.log("b clicked");
+// });
+
+// c.addEventListener("click",
+//     function(){
+//         console.log("c clicked");
+//     },true
+// );
+
+// live charecter count--->
+
+// let inp = document.querySelector("input");
+// let span = document.querySelector("span");
+
+// inp.addEventListener("input", function(){
+//     // console.log("input huaa");
+//     span.textContent = inp.value.length;
+
+// });

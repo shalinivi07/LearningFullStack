@@ -28,17 +28,20 @@ rest padha ...any name. and spread bhi hota hai jo array aur objects me use hota
 ## first class function-
 is function ko ham as a value use kar sakte hai
 ex:-
+
+  ```js
   function abcd(val){
     val();
   }
 
   abcd(function(){
     consol.log("hey");
-  }) 
+  })
+  ``` 
 
 ## high order function ->
   that funcrion who accept function in the parameter and return any function 
-  ```
+  ```js
   function abc(val){
     return function(){
 
@@ -46,7 +49,7 @@ ex:-
   }
 ```
   OR
- ``` 
+ ```js 
   function abc(val){
 
   };
@@ -57,7 +60,7 @@ ex:-
 ```
 ## pure function -->
 those function that use only internl atributs not external
-```
+```js
 let total = 0;
 function(num){
   let newtotal = total;
@@ -68,7 +71,7 @@ function(num){
 those funtion  are impure  that use  or modify external variable
 
 ex:- 
-```
+```js
  let total = 0;
  function(num){
           total = total + num;
@@ -82,7 +85,7 @@ ex:-
   function ke under function and then use function ke under function and very variable that is created with in the funtion their scop of using those variable with in the function only
 
 ## IIFE(imidiatly invoce  function exprestion )
- ```
+ ```js
   (function(){
       consol.log("heeyehey");
   })();
@@ -92,7 +95,7 @@ ex:-
   but we can use hoisting in function stetment and declration, but we can not use it in exprestion 
 
 ## BMI calculater
-```
+```js
 function bmi(weight, hight){
    return weight / (hight*hight);
 }
@@ -100,7 +103,7 @@ function bmi(weight, hight){
 console.log(bmi(64, 4.11).toFix(2));
 ```
 ### DiscountCalculater
-```
+```js
 function dicCal(discunt){
   return function(price){
       return price - price * (discunt / 100);
@@ -121,7 +124,7 @@ function dicCal(discunt){
 
 ** map function tab use karna hai jab apko new arra banana hai 
 foreach, filter, reduse
-```
+```js
 let arr = [15,62,3,4,25,85,47];
 
 let ans = arr.reduce(function(acumulater,val){
@@ -130,7 +133,7 @@ let ans = arr.reduce(function(acumulater,val){
 console.log(ans); //241
 ```
 ### find
-```
+```js
 let arr = [
   {id :1, key:4},
   {id :2, key:5},
@@ -144,7 +147,7 @@ console.log(ans); //{id: 1, key: 4}
 ```
 
 ## distructuring of array
-```
+```js
 let [a,b,,c] = arr;
 ```
 
@@ -153,7 +156,8 @@ let [a,b,,c] = arr;
  JSON.parse(obj) --> ye us string ko wapas se objectify kar deta hai 
 
  so, to copy the nested object we use -->
- ``` let obj2 = JSON.parse(JSON.stringify(obj));
+ ```js
+  let obj2 = JSON.parse(JSON.stringify(obj));
  ```
  now the obj2 has the copy of obj not refrence 
  
@@ -162,4 +166,88 @@ let [a,b,,c] = arr;
 
 ## DOM- document object modification
 
+jo kuchh bhi screen pe ya web page pe changes ya action hote hai vo dom manipulation kahlate hai 
+
 ## Event Handling
+- queryselector()
+- queryselectorall()
+- createElement()
+- createAtribute()
+- appand()
+- appandChild()
+- setAtribute()
+- getAtribute()
+- remove()
+
+### atributes
+ - classList.add()
+
+#### event
+ - addeventlestner("listner", function)#
+#### listners-
+
+ - click
+ - dblclick
+ - input
+ - key
+ - move
+ - mouseover
+ - mouseout
+ - mousemove
+
+# Bubbling--->
+ager aap event reise akr rahe to- ager child pe event nahi laga hai aur parent per hai to ager app chiled pe event reise karenge to parent ka event reise ho jayega 
+
+ex-
+
+```html
+    <ul>
+        <li>apple</li>
+        <li>banana</li>
+        <li>grepse</li>
+        <li>mengo</li>
+        <li>papaya</li>
+    </ul>
+```
+```js
+let ul = document.querySelector("ul");
+
+ul.addEventListener("click", function(dats){
+    dats.target.classList.toggle("lt")
+})
+```
+isme ul parent hai jisper event hai lekin ham chaild ke through event reise kar rahe hai 
+
+## event 
+ye `bubbling` ka ulta hota hai 
+`capturing`  capturingdo phases me work karta hai -
+
+- phase 1: pahale parent ka event resie hota hai then chaild ka.
+- phase 2: bubbling 
+
+```js
+let a = document.querySelector(".a");
+let b = document.querySelector(".b");
+let c = document.querySelector(".c");
+let btn = document.querySelector("button");
+
+btn.addEventListener("click",function(){    // a clicked ,c clicked , btn clicked, b clikced
+    console.log("btn clicked");
+});
+
+a.addEventListener("click",
+    function(){
+        console.log("a clicked");
+    },true
+);
+
+b.addEventListener("click",function(){
+    console.log("b clicked");
+});
+
+c.addEventListener("click",
+    function(){
+        console.log("c clicked");
+    },true
+);
+```
