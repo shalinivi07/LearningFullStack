@@ -302,3 +302,58 @@ form.addEventListener("submit" , function(dats){
 //     span.textContent = inp.value.length;
 
 // });
+
+
+
+//email and password valiadter---->
+
+// let form = document.querySelector("form");
+// let email = document.querySelector("#email");
+// let password = document.querySelector("#password");
+
+// form.addEventListener("submit",function(dats){
+//     dats.preventDefault();
+//     document.querySelector("#emailerror").textContent = "";
+//     document.querySelector("#passworderror").textContent = "";
+
+//     let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+//     let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/;
+
+//     // console.log(emailRegex.test("test@gmail.com")); // true
+//     // console.log(passwordRegex.test("Password1@")); // true
+
+//     let emailAns = emailRegex.test(email.value);
+//     let passwordAns = passwordRegex.test(password.value);
+//     let isVailed = true;
+
+//     if(!emailAns){
+//         document.querySelector("#emailerror").textContent = "enter vailed email";
+//         document.querySelector("#emailerror").style.display = "initial";
+//         let isVailed = false;
+//     }
+
+//     if(!passwordAns){
+//         document.querySelector("#passworderror").textContent = "password is worng";
+//         document.querySelector("#passworderror").style.display = "initial";
+//         let isVailed = false;
+//     }
+
+//     if(isVailed){
+//         document.querySelector(".sucess").textContent = "submitted succefully";
+//     }
+// });
+ 
+
+
+// timers and intervals
+
+let count = 14;
+
+let interval = setInterval(function(){
+    if(count>0){
+        count--;
+        console.log("hello" + count);
+    }else{
+        clearInterval(interval);
+    }
+},1000);

@@ -251,3 +251,49 @@ c.addEventListener("click",
     },true
 );
 ```
+# Timers and Intervals
+
+- settimeout(function,ms);
+- setInterval(function,ms); -- loop ke tarah work karta hai 
+- clearinterval
+- cleartimeout
+```js
+let count = 0;
+let seconds = 3;
+
+let progress = document.querySelector(".progress-bar");
+let percentText = document.querySelector("#percent-text");
+
+let interval = setInterval(function(){
+    if(count <= 99){
+        count++;
+        progress.style.width = `${count}%`; 
+        percentText.textContent = `${count}%`;             
+    }else{
+        document.querySelector("h2").textContent = "Downloaded.";
+        clearInterval(interval);
+    }
+}, 3000/100);
+
+// let container = document.querySelector(".grass-card");
+
+// setTimeout(function(){
+//     container.style.display = "none";
+// } , 3000);
+```
+
+# sessionstorage, localstorage & cookies -
+- localstorage:- ye browser ke sotrage ko use karta hai aur ager tab ya braowser band bhi ho jaye to data delete anhi hoga.
+- sessiondtorage:- ye bhi browser storage use karta hai lekin temrary ha iager tab band kiya to data khatam.
+- cookies:- ye browser ke cookeis me stoge hota hai aur light data ke liye use hota hai.
+
+* localstorage-->
+
+store kaise kare - setItem
+data fatch kaise kare- getItem
+update kaise kare - setItem
+remove kaise kare - removeItem
+
+localstorage me ham object , array ye sab store nahi kar sakte ham only string hi store karte hai isme lekin -  aisa kuchh nahi hai jo ham nahi kar sakte to array ay object sotre karna hai to ham use karenge JSON.strigify  ye kisi bhi type ko string me convert kar deta hai 
+
+aur ager data fatch karte wakt hame apni actual value chahiye to json.parse use kar lete hai ye string ko convart kar deta hai vo jis bhi type ki value save kiya tha string me convert kar ke
