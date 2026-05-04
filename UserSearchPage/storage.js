@@ -38,6 +38,36 @@ let users = [
     name: "Mozan kibutsuji",
     pic: "https://i.pinimg.com/736x/74/33/bb/7433bbef14c2bbb82bdb342ba9ca9a31.jpg",
     bio: "i am a villen how love penting 🎨 | living in colors 🌈"
+  },
+   {
+    name: "nick zude",
+    pic: "https://i.pinimg.com/736x/90/99/bc/9099bcce747a73fdf3eaf456ac4cf602.jpg",
+    bio: "future hokage 🍥 | never give up 🔥"
+  },
+  {
+    name: "saturo gojo",
+    pic: "https://i.pinimg.com/736x/30/df/c1/30dfc1828d6af031edbe08ea92420d86.jpg",
+    bio: "revenge and power ⚡ | lone wolf 🌑"
+  },
+  {
+    name: "Megumi Fushiguro",
+    pic: "https://i.pinimg.com/1200x/ef/a2/0d/efa20d0a7ea936495e71707c158cbe88.jpg",
+    bio: "silent protector 🖤 | sacrifice for peace 🕊️"
+  },
+  {
+    name: "yuji itdori",
+    pic: "https://i.pinimg.com/736x/11/d9/9f/11d99f7c3f5e39e855dc5866a4ac7e55.jpg",
+    bio: "strongest sorcerer 👁️ | limitless 💙"
+  },
+  {
+    name: "obani hashira",
+    pic: "https://i.pinimg.com/736x/33/46/84/33468422c1655fe9d456f86be4d65b0f.jpg",
+    bio: "humanity’s strongest ⚔️ | no nonsense"
+  },
+  {
+    name: "kyojuro renguko hashira",
+    pic: "https://i.pinimg.com/736x/ea/fd/50/eafd50d069e2c23310aa487ba9e5adf4.jpg",
+    bio: "fight for freedom 🔥 | keep moving forward"
   }
 ];
 
