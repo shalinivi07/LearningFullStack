@@ -297,3 +297,8 @@ remove kaise kare - removeItem
 localstorage me ham object , array ye sab store nahi kar sakte ham only string hi store karte hai isme lekin -  aisa kuchh nahi hai jo ham nahi kar sakte to array ay object sotre karna hai to ham use karenge JSON.strigify  ye kisi bhi type ko string me convert kar deta hai 
 
 aur ager data fatch karte wakt hame apni actual value chahiye to json.parse use kar lete hai ye string ko convart kar deta hai vo jis bhi type ki value save kiya tha string me convert kar ke
+
+
+## calling app
+
+in js only:- we want when the + button get clicked teh form will open so select that button

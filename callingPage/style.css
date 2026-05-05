@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Layout */
+.card-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Controls */
+.controls { 
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.controls button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+/* Card */
+.card {
+  width: 280px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Profile */
+.profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Info */
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  color: gray;
+  font-size: 14px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.call {
+  background: black;
+  color: white;
+}
+
+.message {
+  background: #eee;
+}
+
+/* Color dots */
+.colors {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.colors span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: block;
+}
+
+.black { background: black; }
+.purple { background: purple; }
+.orange { background: orange; }
+.green { background: teal; }
+
+
+
+/* Form Card */
+.form-container {
+    display: none;
+    width: 320px;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+label {
+  display: block;
+  font-size: 13px;
+  margin-top: 10px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+/* Category Tags */
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 15px;
+}
+
+.tag {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  /* border: 1px solid; */
+  cursor: pointer;
+}
+
+/* radio hide */
+.tag input {
+  display: none;
+}
+
+.category span {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+/* Colors */
+.emergency {
+  border-color: red;
+  color: red;
+}
+
+.important {
+  border-color: orange;
+  color: orange;
+}
+
+.urgent {
+  border-color: purple;
+  color: purple;
+}
+
+.norush {
+  border-color: gray;
+  color: gray;
+}
+
+.tag input:checked + span,
+.tag input:checked {
+  background: currentColor;
+  color: gray;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.create {
+  background: black;
+  color: white;
+}
+
+.closeForm {
+  background: #ff4d4d;
+  color: white;
+}
