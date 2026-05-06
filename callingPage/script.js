@@ -17,3 +17,5 @@ closeForm.addEventListener("click",function(){
     form.style.display = "none";
     cardContainer.style.display = "initial";
 });
+
+// added event listners to the js file 

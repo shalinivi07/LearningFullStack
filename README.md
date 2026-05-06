@@ -302,3 +302,5 @@ aur ager data fatch karte wakt hame apni actual value chahiye to json.parse use 
 ## calling app
 
 in js only:- we want when the + button get clicked teh form will open so select that button
+and add event listnter to it.
+and when we click on the close button the form shloud disappiar

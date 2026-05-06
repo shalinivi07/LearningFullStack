@@ -72,25 +72,25 @@ body {
 
 /* Buttons */
 .buttons {
-  display: flex;
-  gap: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .buttons button {
-  flex: 1;
-  padding: 8px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
+    flex: 1;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 .call {
-  background: black;
-  color: white;
+    background: black;
+    color: white;
 }
 
 .message {
-  background: #eee;
+    background: #eee;
 }
 
 /* Color dots */
@@ -102,10 +102,10 @@ body {
 }
 
 .colors span {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: block;
 }
 
 .black { background: black; }
@@ -117,107 +117,107 @@ body {
 
 /* Form Card */
 .form-container {
-    display: none;
-    width: 320px;
-    background: #f8f8f8;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      display: none;
+      width: 320px;
+      background: #f8f8f8;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .form-container h2 {
-  margin-bottom: 15px;
+   margin-bottom: 15px;
 }
 
 /* Inputs */
 label {
-  display: block;
-  font-size: 13px;
-  margin-top: 10px;
-  color: #555;
+    display: block;
+    font-size: 13px;
+    margin-top: 10px;
+    color: #555;
 }
 
 input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  outline: none;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
 }
 
 /* Category Tags */
 .category {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 10px 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0 15px;
 }
 
 .tag {
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  /* border: 1px solid; */
-  cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    /* border: 1px solid; */
+    cursor: pointer;
 }
 
 /* radio hide */
 .tag input {
-  display: none;
+    display: none;
 }
 
 .category span {
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 12px;
-  border: 1px solid;
-  cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    border: 1px solid;
+    cursor: pointer;
 }
 
 /* Colors */
 .emergency {
-  border-color: red;
-  color: red;
+    border-color: red;
+    color: red;
 }
 
 .important {
-  border-color: orange;
-  color: orange;
+    border-color: orange;
+    color: orange;
 }
 
 .urgent {
-  border-color: purple;
-  color: purple;
+    border-color: purple;
+    color: purple;
 }
 
 .norush {
-  border-color: gray;
-  color: gray;
+    border-color: gray;
+    color: gray;
 }
 
 .tag input:checked + span,
 .tag input:checked {
-  background: currentColor;
-  color: gray;
+    background: currentColor;
+    color: gray;
 }
 
 /* Buttons */
 button {
-  width: 100%;
-  padding: 10px;
-  border-radius: 20px;
-  border: none;
-  margin-top: 10px;
-  cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .create {
-  background: black;
-  color: white;
+    background: black;
+    color: white;
 }
 
 .closeForm {
-  background: #ff4d4d;
-  color: white;
+    background: #ff4d4d;
+    color: white;
 }
