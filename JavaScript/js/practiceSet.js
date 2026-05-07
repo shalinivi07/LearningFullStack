@@ -16,16 +16,17 @@
 
 // function into arrow function 
 
-let multipl = ( a,b)=>{
-    return a*b;
-}
+// let multipl = ( a,b)=>{
+//     return a*b;
+// }
 
-function score(...val){
-    let total = 0;
-    score.forEach(element => {
-        total = total + element;
-    });
-    return total;
-}
+// function score(...val){
+//     let total = 0;
+//     score.forEach(element => {
+//         total = total + element;
+//     });
+//     return total;
+// }
 
-console.log(score(15,47,65,24,35,25,85,41,74,56));
+// console.log(score(15,47,65,24,35,25,85,41,74,56));
+

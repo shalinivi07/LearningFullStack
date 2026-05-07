@@ -79,7 +79,18 @@ ex:-
 ```
 
 ## clouser -->
-  ek aisa function jo return kare ek function and returing function me perent function ek kisi vairiable ka use kiya ho
+  ek aisa function jo return kare ek function and returing function me perent function ek kisi vairiable ka use kiya ho.
+
+  fayeda - ham ise use karte hai global pollution ho handle karane ke liye - environment ka pollution nahi code ke ander jitane bhi variables hote hai vo achhe se use karane me aur hanlde karane me.
+
+```js
+function abcd(){
+  let a = 20;
+  return function(){
+    console.log(a);
+  }
+}
+```
 
 ## lexical scoping -->
   function ke under function and then use function ke under function and very variable that is created with in the funtion their scop of using those variable with in the function only
@@ -304,3 +315,101 @@ aur ager data fatch karte wakt hame apni actual value chahiye to json.parse use 
 in js only:- we want when the + button get clicked teh form will open so select that button
 and add event listnter to it.
 and when we click on the close button the form shloud disappiar
+
+
+# scope in js-
+1. globle scope -- ager apka code kisi bhi type ke {},[],();
+me nahi hai to aapka code globle scoped hai use ham kahi bhi use kar sakte hai 
+
+2. functional scope-- ager apka code kisi function ke ander likha hai to uska scope functional hai matlab use sirf function ke ander use kar sakte hai bahr nahi use kar sakte
+
+3. breses scope-- ager apka code bresses ke ander likha hai to uska cope sirf use {} ke ander hi hoga aap use {} ke bahr nahi use kar sake .
+
+# exicution content-
+jab bhi js koi function run karta hai to sabse pahle exicution context banata hai , ye ek prossec hai jo ki do phases me chalata hai. 1 memory phase and 2 exicution phase.
+
+
+# lexical scoping -->
+ aap kin chijo ko assse kar sakte ho usake basis pe pata chalta hai ki aapki lexical scoping kitnai hai matlab aak jaha physically present ho oo pura scop hi lexical scop hota hai.
+
+ #####  javascript lexically scoped hoti hai 
+
+# dynamicaly  scoping -->
+kaha se call kar rahe ho uspe depend karegi ki kay value milegi.
+```js
+
+let a = 12;
+
+function abcd(){
+  console.log(a);
+}
+
+function cde(){
+  let a = 30;
+  abcd();                    // ans:-12 js lexically scop hai is liye 12 print ho raha hai
+}                            // vahi jab dynamially scoped hota to 30 print hota
+cde();
+
+```
+## clousers -->
+
+ye sach hai jab bhi koi function run hota hai to vo funciton aur uske variable khatam ho jate hai .
+aise * variable priserved * hote hai
+javascript ke funciton me jab bhi ye abcd funciton run karata hai usake baad ye function khatam ho jata hai but jab bhi clouser bnate hai to apke function aur uske variables ka back link banta hai  aur uska namm hota hai [[environment]]
+
+```js
+function abcd(){
+  let a = 20;
+  return function(){
+    console.log(a);
+  }
+}
+```
+
+#### private counter -->
+```js
+function countForMe(){
+  let c = 0;
+  return function(){
+    c++;
+    console.log(a);
+  }
+}
+let fnc = countForMe(); it has its own c
+fnc(); //1
+fnc();  //2
+fnc();  //3
+fnc(); //4
+fnc();  //5
+fnc();   //6
+
+let fnc2 = countForMe(); it has its own c 
+fun2(); //1
+fun2();//2
+fun2();//3
+fun2();//4
+fun2();//5
+fun2();//6
+```
+
+## encapsulation -->
+```js
+function countForMe(){
+  let c = 0;
+  return function(){
+    if(c < 5)
+    c++;
+  console.log(`clicked: ${c} times`);
+  }else{
+    console.error("limit is excceded");
+  }
+}
+
+let fnc = countForMe();
+fnc();  // clicked: 1 time
+fnc();  // clicked: 1 time
+fnc();  // clicked: 1 time
+fnc();  // clicked: 1 time
+fnc();  // limit is excceded
+// isme ager consol se hm c ki value update karane k kosis karenge to vo ek new globle variable banadega lekin c ki value update nahi hogi kyu ki vo encapsulate  ho chuka hai 
+```
