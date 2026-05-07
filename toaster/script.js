@@ -19,8 +19,12 @@ let toaster = createToaster({
     duration : 3,
 });
 
-toaster("Download Done");
+toaster("Downloading Done");
 
 setTimeout(() => {
     toaster("shalini download is done");
 }, 2000);
+
+setTimeout(() => {
+    toaster("shalini accepted youe request");
+}, 4000);

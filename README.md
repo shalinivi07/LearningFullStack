@@ -413,3 +413,5 @@ fnc();  // clicked: 1 time
 fnc();  // limit is excceded
 // isme ager consol se hm c ki value update karane k kosis karenge to vo ek new globle variable banadega lekin c ki value update nahi hogi kyu ki vo encapsulate  ho chuka hai 
 ```
+
+# this keyword --->
