@@ -30,3 +30,28 @@
 
 // console.log(score(15,47,65,24,35,25,85,41,74,56));
 
+console.log(this);
+
+
+function abdc(){
+    console.log(this);
+}
+
+// method ke ander
+let obj = {
+    name: "shalini",
+    age : 20,
+    surname: function(){
+        console.log(this.name);
+        console.log(this.age);
+    }
+}
+obj.surname();
+
+// event handler
+
+document.querySelector("h1").addEventListener("click",function(){
+    console.log(this.style.color = "red");
+});
+
+

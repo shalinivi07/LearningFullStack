@@ -415,3 +415,8 @@ fnc();  // limit is excceded
 ```
 
 # this keyword --->
+this keyword ek specil key word hai jisaki value js me alag alag hota hai jaise ager ham console.log karenge to value window hoga, aur jab function me bhi use karenge to bhi window hoga leki ager koi oject banaya hai to usme function key word ka use kar ke method banaya hai to uske ander use karane pe this ki value pura object hota hai.
+```js
+consol.lo
+```
+
