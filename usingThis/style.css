@@ -1,0 +1,149 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #ece8f7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 60px;
+    }
+
+    /* Form Box */
+    .form-container {
+      width: 100%;
+      max-width: 420px;
+      background: #1f1f1f;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .form-container h2 {
+      color: white;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    .input-box {
+      margin-bottom: 20px;
+    }
+
+    .input-box label {
+      display: block;
+      color: #bdbdbd;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .input-box input,
+    .input-box textarea {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background: white;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .input-box textarea {
+      resize: none;
+      height: 90px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(to right, #3f7cff, #b12cff);
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+      transform: scale(1.02);
+    }
+
+    /* Cards Section */
+    .cards {
+      width: 100%;
+      max-width: 1100px;
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 260px;
+      background: white;
+      border-radius: 14px;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background: linear-gradient(to right, #3f7cff, #b12cff);
+    }
+
+    .card img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 18px;
+      border: 4px solid #ece8f7;
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+      color: #222;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .card button {
+      border: none;
+      background: linear-gradient(to right, #3f7cff, #b12cff);
+      color: white;
+      padding: 10px 22px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .card button:hover {
+      transform: scale(1.05);
+    }
+
+    @media(max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }

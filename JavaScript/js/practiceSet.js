@@ -30,28 +30,41 @@
 
 // console.log(score(15,47,65,24,35,25,85,41,74,56));
 
-console.log(this);
+// console.log(this);
 
 
-function abdc(){
-    console.log(this);
+// function abdc(){
+//     console.log(this);
+// }
+
+// // method ke ander
+// let obj = {
+//     name: "shalini",
+//     age : 20,
+//     surname: function(){
+//         console.log(this.name);
+//         console.log(this.age);
+//     }
+// }
+// obj.surname();
+
+// // event handler
+
+// document.querySelector("h1").addEventListener("click",function(){
+//     console.log(this.style.color = "red");
+// });
+
+
+// call function--->
+
+let obj2 = {
+    name2 : "manisha",
+    age : 24
 }
 
-// method ke ander
-let obj = {
-    name: "shalini",
-    age : 20,
-    surname: function(){
-        console.log(this.name);
-        console.log(this.age);
-    }
+function abcd(a,b,c,d){
+    console.log(this,a,b,c,d);
 }
-obj.surname();
 
-// event handler
-
-document.querySelector("h1").addEventListener("click",function(){
-    console.log(this.style.color = "red");
-});
-
+abcd(obj2,1,2,3,6);
 
