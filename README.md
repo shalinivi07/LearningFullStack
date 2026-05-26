@@ -420,3 +420,39 @@ this keyword ek specil key word hai jisaki value js me alag alag hota hai jaise 
 consol.lo
 ```
 
+
+## object oriented programming --->
+
+is code me CreatePancil hai vo `constructor function`jo object ki trah work kar raha hai.
+
+#### prototype -->
+ye kisi bhi file ko constant rakhane ke liye use kiya jata hai jaise ki hame sare pencils ki company same rakhani thi leki har baar compony as a parameter pass karane pe sabki memory me jagah hoti to vo jada achha nahi hai usase wastege of memory hota hai.
+
+isliye prototype ka use karte hai jo shared karke use karate hai ek hi
+
+
+```js
+function CreatePancil(name, parice, color){
+    this.name = name;
+    this.price = parice;
+    this.color = color;
+    this.write = function(text){
+        let h1 = document.createElement("h1");
+        h1.textContent = text;
+        h1.style.color = this.color;
+        document.body.appendChild(h1);
+    };
+}
+CreatePancil.prototype.company = "natraj";
+
+let pencil1 = new CreatePancil("natraj", 10, "red");
+let pencil2 = new CreatePancil("natraj", 15, "blue");
+let pencil3 = new CreatePancil("natraj", 20, "green");
+
+pencil1.write("hello main pencil1 hu");
+pencil2.write("hello main pencil2 hu");
+pencil3.write("hello main pencil3 hu");
+
+```
+
+is tarah ham wirte function bhi prototype me bana sakte hai usase bhi memory weastge kam hoga jab sare pencils write funcion ko shear karenge
