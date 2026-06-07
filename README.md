@@ -4,9 +4,9 @@ we can check the ture nature of the given values by using (!! before the value).
 and the remaining all are truthy in nature
 
 pridict the result:
-true + false = 1(1+0)
-null + 1 = 1(0+1)
-5 + "5" = 55(+ perform concatination here)
+true + false = 1(1+0)<br>
+null + 1 = 1(0+1)<br>
+5 + "5" = 55(+ perform concatination here)<br>
 !!undefined = false
 
 why NaN's type is number?

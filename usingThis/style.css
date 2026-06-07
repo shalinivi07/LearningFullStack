@@ -17,7 +17,7 @@
 
     /* Form Box */
     .form-container {
-      display: none;
+      /* display: none; */
       width: 100%;
       max-width: 420px;
       background: #1f1f1f;
