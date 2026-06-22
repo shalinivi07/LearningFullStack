@@ -3,88 +3,57 @@
 // buttonns ko handle karana hia 
 // filters ko handle karna hai
 
-let addNote = document.querySelector("#add-note");
-let form = document.querySelector(".form-container");
-let cardContainer = document.querySelector(".card-container");
-let closeForm = document.querySelector(".closeform");
+let form = document.querySelector("form");
+let username = document.querySelector("#name");
+let role = document.querySelector("#role");
+let bio = document.querySelector("#bio");
+let photo = document.querySelector("#photo");
 
-addNote.addEventListener("click",function(){
-    cardContainer.style.display = "none";
-    form.style.display = "initial";
-});
+const userManager = {
+  users: [],
 
-closeForm.addEventListener("click",function(){
-    form.style.display = "none";
-    // cardContainer.style.display = "initial";
-});
+  init: function () {
+    form.addEventListener("submit", this.submitForm.bind(this));
+  },
 
-// added event listners to the js file 
+  submitForm: function (e) {
+    e.preventDefault();
+    this.addUser();
+  },
 
-const imageUrl = document.querySelector('input[placeholder="http//example.jpg"]');
-const fullName = document.querySelector('input[placeholder=" Enter Name"]');
-const homeTown = document.querySelector('input[placeholder="Enter your Home Town"]');
-const purpose = document.querySelector('input[placeholder="eg:- Quick appoinment role"]');
-const categoryRadios = document.querySelectorAll('input[name="category"]');
+  addUser: function () {
+    this.users.push({
+      username: username.value,
+      role: role.value,
+      bio: bio.value,
+      photo: photo.value,
+    });
+    // form.style.display = "none";
+    form.reset();
+    this.renderUi();
+  },
 
-// Category radio buttons
-const emergency = document.querySelector('input[value="Emergency"]');
-const important = document.querySelector('input[value="Importent"]');
-const urgent = document.querySelector('input[value="Urgent"]');
-const noRush = document.querySelector('input[value="no rush"]');
+  renderUi: function () {
+    const usersContainer = document.querySelector(".users");
+    usersContainer.innerHTML = "";
 
-let category = null;
-function makeValidation(){
-    if(category === null){
-        
-    }
-    )
-     // Check Image URL
-    if (imageUrl.value.trim() === "") {
-        // alert("Please enter an Image URL");
-        // imageUrl.focus();
-        return false;
-    }
+    this.users.forEach(function (user) {
 
-    // Simple image URL validation
-    // const imagePattern = /\.(jpg|jpeg|png|gif|webp)$/i;
-    // if (!imagePattern.test(imageUrl.value.trim())) {
-    //     alert("Please enter a valid image URL");
-    //     imageUrl.focus();
-    //     return false;
-    // }
+      const card = document.createElement("div");
+      card.classList.add("user-card");
 
-    // Check Full Name
-    if (fullName.value.trim() === "") {
-        // alert("Please enter your Full Name");
-        // fullName.focus();
-        return false;
-    }
+      card.innerHTML = `
+        <img src="${user.photo}" alt="User Photo">
+        <h2>${user.username}</h2>
+        <p class="role">${user.role}</p>
+        <p class="bio">${user.bio}</p>
+      `;
 
-    // Check Home Town
-    if (homeTown.value.trim() === "") {
-        // alert("Please enter your Home Town");
-        // homeTown.focus();
-        return false;
-    }
+      usersContainer.appendChild(card);
+    });
+  },
 
-    // Check Purpose
-    if (purpose.value.trim() === "") {
-        // alert("Please enter the Purpose");
-        // purpose.focus();
-        return false;
-    }
+  removeUser: function () {}
+};
 
-    // Check Category
-    if (!category) {
-        alert("Please select a Category");
-        return false;
-    }
-
-    return true;
-}
-
-form.addEventListener("submit", function(e){
-    e.priventDefault();
-    makeValidation();
-
-})
+userManager.init();

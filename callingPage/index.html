@@ -1,99 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CallingPage</title>
+    <title>User Cards</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="form-container">
+    <form autocomplete="off" class="form-container">
 
-        <h2>New Call</h2>
-        <!-- form -->
-        <form>
-            <label for="">Image URL</label>
-            <input required type="text" placeholder="http//example.jpg">
+        <h2>Add User</h2>
 
-            <label for="">Full Name</label>
-            <input required type="text" placeholder=" Enter Name">
-
-            <label for="">Home Town</label>
-            <input required type="text" placeholder="Enter your Home Town">
-            
-            <label for="">Purpose</label>
-            <input required type="text" placeholder="eg:- Quick appoinment role">
-            
-            <div class="category">
-
-                <label>Category</label>
-                <label class="tag emergency" >
-                <input required type="radio" name="category" value="Emergency">
-                <span>Emergency</span>
-                </label>
-                <label class="tag importent" >
-                    <input required type="radio" name="category" value="Importent">
-                    <span>Importent</span>
-                </label>
-                <label class="tag urgent">
-                    <input required type="radio" name="category" value="Urgent">
-                    <span>Urgent</span>
-                </label>
-                <label class="tag norush">
-                    <input required type="radio" name="category" value="no rush">
-                    <span>No Rush</span>
-                </label>
-                <button class="create">Create Note</button>
-            </div>
-            
-            
-            <button class="closeForm">Close</button>
-            
-        </form>
-    </div>
-
-    <div class="card-container">
-
-            <!-- Side Controls -->
-        <div class="controls">
-            <button id="add-note">+</button>
-            <button>↑</button>
-            <button>↓</button>
+        <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
         </div>
 
-        <!-- Card -->
-        <div class="card">
-            <div class="profile">
-            <img src="https://i.pravatar.cc/100" alt="profile">
-            <div>
-                <h2>Fatima Uma</h2>
-                <p>Home town</p>
-                <p>Bookings</p>
-            </div>
-            </div>
-
-            <div class="info">
-                <p>Singapore</p>
-            <p>3 times</p>
-            </div>
-
-            <div class="buttons">
-            <button class="call">Call</button>
-            <button class="message">Message</button>
-            </div>
+        <div class="input-group">
+            <label for="role">Role</label>
+            <input type="text" id="role" required>
         </div>
-        
-        <!-- Color Dots -->
-        <div class="colors">
-            <span class="black"></span>
-            <span class="purple"></span>
-            <span class="orange"></span>
-            <span class="green"></span>
+
+        <div class="input-group">
+            <label for="bio">Bio</label>
+            <textarea id="bio" rows="3" required></textarea>
         </div>
-    </div>
+
+        <div class="input-group">
+            <label for="photo">Photo URL</label>
+            <input type="url" id="photo" required>
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <div class="users"></div>
 
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>
